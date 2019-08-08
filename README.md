@@ -1,25 +1,27 @@
 # Tutorial para utilizar a camera ORBBEC no unity
-
+**-Necessário ter instalado a versao 5.3.6 da Unity disponível no site (https://unity3d.com/pt/get-unity/download/archive)**
 
 ## Instalando o driver da camera no computador
 
-Para o reconhecimento da Câmera ORBBEC ASTRA no computador, é necessário instalar drives para o seu funcionamento. Para isso, deve-se acessar o site oficial da ORBBEC e realizar o download dos drives compatíveis com a câmera e o sistema operacional do computador de acordo com a figura 1. 
+Para o reconhecimento da Câmera ORBBEC ASTRA no computador, é necessário instalar drives para o seu funcionamento. Para isso, deve-se acessar o site dos desenvolvedores da ORBBEC (https://orbbec3d.com/develop/) e realizar o download dos drives compatíveis com a câmera e o sistema operacional do computador de acordo com a Figura 1. 
 
 ![Download camera](/img/driver_camera.png)
 **Figura 1.**
 
 
 
+## Fazendo download do pacote de assets
 
-No mesmo site está disponível o pacote de assets necessarios para o funcinamento da camera na plataforma Unity.
+No mesmo site citado anteriormente, está disponível o pacote de assets necessarios para o funcinamento da camera na plataforma Unity.
 
 ![Down_assets](https://user-images.githubusercontent.com/53840235/62720364-42709c80-b9e0-11e9-91be-ec1d56a658e0.PNG)
 **Figura 2.**
 
 
+## Importando o pacote de assets para Unity
 
 
-Depois de baixado e instalado os drives da câmera, importe do pacote de assets para Unity como mostram as imagens. 
+Depois de baixado e instalado o drive da câmera, importe do pacote de assets para Unity como mostram as Figuras (3 a 5). 
 
 
 ![Import_asset](https://user-images.githubusercontent.com/53840235/62721786-5c5fae80-b9e3-11e9-9bd1-ea806db81326.png)
@@ -52,7 +54,7 @@ Na aba do objeto criado, clique na opção “Add Component” e logo após na o
 **Figura 7.**
 
 
-Selecione o “Mesh Filter”, em seguida clique no círculo que irá aparecer do lado direito da tela e depois selecione a opção “Quad” para que se crie a caixa onde aparecerá a imagem da câmera como mostram as seguintes figuras.  
+Selecione o “Mesh Filter”, em seguida clique no círculo que irá aparecer do lado direito da tela e depois selecione a opção “Quad” para que se crie a caixa onde aparecerá a imagem da câmera como mostram as seguintes Figuras (8 a 10).  
 
 
 ![3](https://user-images.githubusercontent.com/53840235/62722192-47374f80-b9e4-11e9-9932-93c94a95ba96.png)
@@ -74,7 +76,7 @@ Para renderizar a imagem da câmera adicione outro componente chamado “Mesh Re
 **Figura 11.**
 
 
-Após adicionar o Mesh Renderer, na aba “Cast Shadows” coloque em “Off” juntamente com a aba “Reflection Probes”, desmarque as caixas “Receive Shadows” e “Use Light Probes”, clique na opção “Materials” e depois no círculo na parte direita da tela e selecione a “Unlit Texture” como está apresentado nas figuras seguintes.
+Após adicionar o Mesh Renderer, na aba “Cast Shadows” coloque em “Off” juntamente com a aba “Reflection Probes”, desmarque as caixas “Receive Shadows” e “Use Light Probes”, clique na opção “Materials” e depois no círculo na parte direita da tela e selecione a “Unlit Texture” como está apresentado nas seguintes Figuras (12 a 14).
 
 
 ![7](https://user-images.githubusercontent.com/53840235/62722465-d2184a00-b9e4-11e9-8e17-4ba3d2398bfa.png)
@@ -98,7 +100,7 @@ Selecione a pasta scripts dentro do pacote de assets que foi adicionado no iníc
 
 ## Adicionando o Controle da Câmera
 
-Crie um novo objeto fora da pasta “Main Camera” e adicione um script chamado “Astra Initializing Event Args”.
+Crie um novo objeto fora da pasta “Main Camera” e adicione um script chamado “Astra Initializing Event Args” (Figuras 16 e 17).
 
 
 ![12](https://user-images.githubusercontent.com/53840235/62722971-f88ab500-b9e5-11e9-8f89-942ce65334e0.PNG)
@@ -109,7 +111,7 @@ Crie um novo objeto fora da pasta “Main Camera” e adicione um script chamado
 **Figura 17.**
 
 
-No objeto criado e com o script selecione a opção “New Color Frame Event” e clique no “+”, em seguida escolha o objeto criado no início do tutorial na aba “Main Camera”.
+No objeto criado e com o script selecione a opção “New Color Frame Event” e clique no “+”, em seguida escolha o objeto criado no início do tutorial na aba “Main Camera” (Figuras 18 e 19).
 
 
 ![14](https://user-images.githubusercontent.com/53840235/62723052-27089000-b9e6-11e9-8b66-2c62a88280cf.png)
@@ -132,10 +134,3 @@ Após, selecione a aba “Runtime Only” e marque a opção “Editor and Runti
 
 ![17](https://user-images.githubusercontent.com/53840235/62723504-42c06600-b9e7-11e9-873b-b39935c19379.png)
 **Figura 21.**
-
-
-E, por fim ajuste a caixa que exibe a imagem da câmera de acordo com o seu gosto. 
-
-
-![18](https://user-images.githubusercontent.com/53840235/62723520-4d7afb00-b9e7-11e9-98c7-80c9d4c6da68.png)
-**Figura 22.**
