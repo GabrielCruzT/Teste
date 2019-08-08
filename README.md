@@ -1,5 +1,5 @@
 # Tutorial para utilizar a camera ORBBEC no unity
-**-Necessário ter instalado a versao 5.3.6 da Unity disponível no site (https://unity3d.com/pt/get-unity/download/archive)**
+**- Necessário ter instalado a versao 5.3.6 da Unity disponível no site (https://unity3d.com/pt/get-unity/download/archive)**
 
 ## Instalando o driver da camera no computador
 
