@@ -226,3 +226,5 @@ Após, selecione a aba “Runtime Only” e marque a opção “Editor and Runti
  Figura 21.
 </p>
  
+ 
+[Voltar para o inicio](#tutorial-para-utilizar-a-camera-orbbec-no-unity)
