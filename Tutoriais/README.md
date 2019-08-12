@@ -26,12 +26,12 @@ Para o reconhecimento da Câmera ORBBEC ASTRA no computador, é necessário inst
 
 ## Fazendo download do pacote de assets
 
-No mesmo site citado anteriormente, está disponível o pacote de assets necessarios para o funcinamento da camera na plataforma Unity. **(Figura 2)**
+No mesmo site citado anteriormente, está disponível o pacote de assets necessarios para o funcinamento da camera na plataforma Unity. **(Figura 2)** (OBS: Necessário instalar a versao 5.3.6 da [Unity](https://unity3d.com/pt/get-unity/download/archive))
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/53840235/62720364-42709c80-b9e0-11e9-91be-ec1d56a658e0.PNG"width="500">
  <br>
- Figura 2.   (OBS: Necessário instalar a versao 5.3.6 da [Unity](https://unity3d.com/pt/get-unity/download/archive))
+ Figura 2. 
 </p>
  
  
