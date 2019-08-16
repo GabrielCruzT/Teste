@@ -172,7 +172,7 @@ Crie um novo objeto fora da pasta “Main Camera” e adicione um script chamado
  
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/53840235/63188108-f1435700-c036-11e9-9b86-b60238b7d1a6.PNG"width="500">
+<img src="https://user-images.githubusercontent.com/53840235/63188366-978f5c80-c037-11e9-9681-70715cf400bd.PNG"width="500">
  <br>
  Figura 16.
 </p>
@@ -180,7 +180,7 @@ Crie um novo objeto fora da pasta “Main Camera” e adicione um script chamado
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/53840235/62722977-fc1e3c00-b9e5-11e9-8068-44be60a5d993.PNG"width="500">
+<img src="https://user-images.githubusercontent.com/53840235/63188108-f1435700-c036-11e9-9b86-b60238b7d1a6.PNG"width="500">
  <br>
  Figura 17.
 </p>
