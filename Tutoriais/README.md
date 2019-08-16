@@ -168,11 +168,11 @@ Selecione a pasta scripts dentro do pacote de assets que foi adicionado no iníc
 
 ## Adicionando o Controle da Câmera
 
-Crie um novo objeto fora da pasta “Main Camera” e adicione um script chamado “Astra Initializing Event Args”. **(Figuras 16 e 17)**
+Crie um novo objeto fora da pasta “Main Camera” e adicione um script chamado “Astra Controller”. **(Figuras 16 e 17)**
  
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/53840235/62722971-f88ab500-b9e5-11e9-8f89-942ce65334e0.PNG"width="500">
+<img src="https://user-images.githubusercontent.com/53840235/63188108-f1435700-c036-11e9-9b86-b60238b7d1a6.PNG"width="500">
  <br>
  Figura 16.
 </p>
