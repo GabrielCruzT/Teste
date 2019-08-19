@@ -1,6 +1,6 @@
-# Tutorial para utilizar a camera ORBBEC no unity
+# Tutorial para utilizar a câmera ORBBEC no unity
 
-[Instalando o driver da Câmera](#instalando-o-driver-da-camera-no-computador)
+[Instalando o driver da Câmera](#instalando-o-driver-da-câmera-no-computador)
 
 [Fazendo download do pacote de assets](#fazendo-download-do-pacote-de-assets)
 
@@ -12,7 +12,7 @@
 
 
 
-## Instalando o driver da camera no computador
+## Instalando o driver da câmera no computador
 
 Para o reconhecimento da Câmera ORBBEC ASTRA no computador, é necessário instalar drives para o seu funcionamento. Para isso, deve-se acessar o site dos [desenvolvedores da ORBBEC](https://orbbec3d.com/develop/) e realizar o download dos drives compatíveis com a câmera e o sistema operacional do computador, conforme mostrado na Figura 1. 
 
