@@ -4,7 +4,7 @@
 
 [Fazendo download do pacote de assets](#fazendo-download-do-pacote-de-assets)
 
-[Como obter a imagem RAW da Câmera](#como_obter_a_imagem_raw_da_câmera) 
+[Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera) 
 
 [Importando o pacote de assets](#importando-o-pacote-de-assets-para-unity)
 
