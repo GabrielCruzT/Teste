@@ -208,7 +208,7 @@ No objeto criado e com o script selecione a opção “New Color Frame Event” 
  
 
 
-Clique na aba “No function”, selecione a opção “Color texture renderer” e por fim na opção “On new frame”, segundo a figura 20.
+Clique na aba “No function”, selecione a opção “Color texture renderer” e em seguida a opção “On new frame”, segundo a figura 20.
 
 
 <p align="center">
