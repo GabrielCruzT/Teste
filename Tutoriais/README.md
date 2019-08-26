@@ -14,15 +14,13 @@
 
 ## Instalando o driver da camera no computador
 
-Para o reconhecimento da Câmera ORBBEC ASTRA no computador, é necessário instalar drives para o seu funcionamento. Para isso, deve-se acessar o site dos desenvolvedores da ORBBEC [desenvolvedores da ORBBEC](https://orbbec3d.com/develop/) e realizar o download dos drives compatíveis com a câmera e o sistema operacional do computador, conforme mostrado na Figura 1. 
+Para o reconhecimento e funcionamento da Câmera ORBBEC ASTRA no computador, é necessário instalar drives da câmera. Para isso, deve-se acessar o site dos [desenvolvedores da ORBBEC](https://orbbec3d.com/develop/) e realizar o download dos drives compatíveis com a câmera e o sistema operacional do computador, conforme mostrado na Figura 1.
 
 <p align="center">
 <img src="img/driver_camera.png" width="500">
  <br>
  Figura 1. Download dos drivers na pagina do desenvolvedor da Orbecc.
 </p>
-
-
 
 
 
