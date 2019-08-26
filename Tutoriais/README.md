@@ -4,11 +4,12 @@
 
 [Fazendo download do pacote de assets](#fazendo-download-do-pacote-de-assets)
 
-[Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera) 
-
 [Importando o pacote de assets](#importando-o-pacote-de-assets-para-unity)
 
 [Adicionando o Controle da Câmera](#adicionando-o-controle-da-câmera)
+
+[Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera) 
+
 
 
 
@@ -41,7 +42,7 @@ No mesmo site citado anteriormente, está disponível o pacote de assets necessa
 ## Importando o pacote de assets para Unity
 
 
-Depois de baixado e instalado o drive da câmera, importe do pacote de assets para Unity, como mostram as figuras de 3 a 5.
+Depois de baixado e instalado o driver da câmera, importe do pacote de assets para Unity, como mostram as figuras de 3 a 5.
 
 
 <p align="center">
@@ -67,11 +68,69 @@ Depois de baixado e instalado o drive da câmera, importe do pacote de assets pa
  Figura 5.
 </p>
  
+ 
 
 
 
+## Adicionando o Controlador da Câmera
 
-## Como obter a imagem RAW da Câmera 
+O primeiro passo é adicionar o Controlador da Câmera. Isso é feito adicionando o script **"Astra Controller"** à um novo objeto. Para isso, crie um novo objeto clicando com o botão direito do mouse na **Janela de Hierarquia** e escolhendo a opção *"Create Empty"*. Uma vez criado o objeto, selecione o script, na pasta de scripts do pacote de assets, chamado **“Astra Controller”** e arraste para o objeto criado, consoante com as Figuras 6 e 7. O script também pode ser adicionado por meio do botão *"Add Component"* do objeto recém criado.
+ 
+
+<p align="center">
+<img src="img/criando_objeto_para_controller.png"width="500">
+ <br>
+ Figura 6. Adicionando um novo objeto vazio.
+</p>
+ 
+
+
+<p align="center">
+<img src="img/adicionando_script_astracontroler.png"width="500">
+ <br>
+ Figura 7. Selecionando o script <b>"Astra Controller"</b> para ser arrastado ao novo objeto recém criado.
+</p>
+                                                                                                                         
+
+
+No objeto criado e com o script selecione a opção “New Color Frame Event” e clique no “+”, em seguida escolha o objeto criado no início do tutorial na aba “Main Camera”, tal qual as figuras 18 e 19.
+
+
+<p align="center">
+<img src="img/configurando_newcolorframe1.png"width="500">
+ <br>
+ Figura 18.
+</p>
+ 
+
+
+<p align="center">
+<img src="img/configurando_newcolorframe2.png"width="500">
+ <br>
+ Figura 19.
+</p>
+ 
+
+
+Clique na aba “No function”, selecione a opção “Color texture renderer” e em seguida a opção “On new frame”, segundo a figura 20.
+
+
+<p align="center">
+<img src="img/configurando_newcolorframe3.png"width="500">
+ <br>
+ Figura 20.
+</p>
+ 
+
+
+Após, selecione a aba “Runtime Only” e marque a opção “Editor and Runtime”, como apresenta a figura 21.
+
+
+<p align="center">
+<img src="img/configurando_newcolorframe4.png"width="500">
+ <br>
+ Figura 21.
+</p>## Como obter a imagem RAW da Câmera 
 
 Feito todo o processo de instalação e depois de aberto o unity, crie um novo objeto na aba “Main Camera”, conforme a figura 6.
 
@@ -165,68 +224,7 @@ Selecione a pasta scripts dentro do pacote de assets que foi adicionado no iníc
  <br>
  Figura 15.
 </p>
- 
 
 
-## Adicionando o Controle da Câmera
 
-Crie um novo objeto fora da pasta “Main Camera” e adicione um script chamado “Astra Controller”, consoante com as figuras 16 e 17.
- 
-
-<p align="center">
-<img src="img/criando_objeto_para_controller.png"width="500">
- <br>
- Figura 16.
-</p>
- 
-
-
-<p align="center">
-<img src="img/adicionando_script_astracontroler.png"width="500">
- <br>
- Figura 17.
-</p>
-                                                                                                                         
-
-
-No objeto criado e com o script selecione a opção “New Color Frame Event” e clique no “+”, em seguida escolha o objeto criado no início do tutorial na aba “Main Camera”, tal qual as figuras 18 e 19.
-
-
-<p align="center">
-<img src="img/configurando_newcolorframe1.png"width="500">
- <br>
- Figura 18.
-</p>
- 
-
-
-<p align="center">
-<img src="img/configurando_newcolorframe2.png"width="500">
- <br>
- Figura 19.
-</p>
- 
-
-
-Clique na aba “No function”, selecione a opção “Color texture renderer” e em seguida a opção “On new frame”, segundo a figura 20.
-
-
-<p align="center">
-<img src="img/configurando_newcolorframe3.png"width="500">
- <br>
- Figura 20.
-</p>
- 
-
-
-Após, selecione a aba “Runtime Only” e marque a opção “Editor and Runtime”, como apresenta a figura 21.
-
-
-<p align="center">
-<img src="img/configurando_newcolorframe4.png"width="500">
- <br>
- Figura 21.
-</p>
- 
- 
 [Voltar para o inicio](#tutorial-para-utilizar-a-camera-orbbec-no-unity)
