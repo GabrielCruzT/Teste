@@ -102,75 +102,36 @@ O primeiro passo é adicionar o Controlador da Câmera. Isso é feito adicionand
 
 **\*** *Estes modos de visualização só funcionam a partir do momento que a câmera detecta um corpo na imagem.*
 
-No objeto criado e com o script selecione a opção **“New Color Frame Event”** e clique no **“+”**, em seguida escolha o objeto criado no início do tutorial na aba **“Main Camera”**, tal qual as figuras 8 e 9.
+## Como obter a imagem RAW da Câmera
+
+Crie um novo objeto na aba **“Main Camera”** da Janela de Hierarquia, conforme a figura 8.
 
 
 <p align="center">
-<img src="img/configurando_newcolorframe1.png"width="500">
+<img src="img/criando_objeto_maincamera.png"width="500">
  <br>
  Figura 8.
 </p>
  
 
 
-<p align="center">
-<img src="img/configurando_newcolorframe2.png"width="500">
- <br>
- Figura 9.
-</p>
- 
-
-
-Clique na aba **“No function”**, selecione a opção **“Color texture renderer”** e em seguida a opção **“On new frame”**, segundo a figura 10.
-
-
-<p align="center">
-<img src="img/configurando_newcolorframe3.png"width="500">
- <br>
- Figura 10.
-</p>
- 
-
-
-Após, selecione a aba **“Runtime Only”** e marque a opção **“Editor and Runtime”**, como apresenta a figura 11.
-
-
-<p align="center">
-<img src="img/configurando_newcolorframe4.png"width="500">
- <br>
- Figura 11.
-</p>
-
-## Como obter a imagem RAW da Câmera 
-
-Feito todo o processo de instalação e depois de aberto o unity, crie um novo objeto na aba **“Main Camera”**, conforme a figura 12.
-
-
-<p align="center">
-<img src="img/criando_objeto_maincamera.png"width="500">
- <br>
- Figura 12.
-</p>
- 
-
-
-Na aba do objeto criado, clique na opção **“Add Component”** e logo após na opção **“Mesh”**,segundo a figura 13.
+Selecione o objeto criado, clique na opção **“Add Component”** e logo após na opção **“Mesh”**,segundo a figura 9.
 
 
 <p align="center">
 <img src="img/adicionando_componente_meshfilter1.png"width="500">
  <br>
- Figura 13.
+ Figura 9.
 </p>
  
 
-Selecione o **“Mesh Filter”**, em seguida clique no círculo que irá aparecer do lado direito da tela e depois selecione a opção **“Quad”** para que se crie a caixa onde aparecerá a imagem da câmera como mostram as seguintes, como apresentado nas figuras de 14 a 16.
+Selecione o componente **“Mesh Filter”**, em seguida clique no círculo que irá aparecer do lado direito da tela e depois selecione a opção **“Quad”** para que se crie a caixa onde aparecerá a imagem da câmera como mostram as seguintes, como apresentado nas figuras de 10 a 12.
 
 
 <p align="center">
 <img src="img/adicionando_componente_meshfilter2.png"width="500">
  <br>
- Figura 14.
+ Figura 10.
 </p>
  
 
@@ -178,35 +139,35 @@ Selecione o **“Mesh Filter”**, em seguida clique no círculo que irá aparec
 <p align="center">
 <img src="img/selecionar_tipo_mesh1.png"width="500">
  <br>
- Figura 15.
+ Figura 11.
 </p>
  
 
 <p align="center">
 <img src="img/selecionar_tipo_mesh2.png"width="500">
  <br>
- Figura 16.
+ Figura 12.
 </p>
  
 
 
-Para renderizar a imagem da câmera adicione outro componente chamado **“Mesh Renderer”** no mesmo objeto criado anteriormente, conforme mostra a Figura 17.
+Para acrescentar textura no objeto que irá transmitir a imagem da câmera adicione outro componente chamado **“Mesh Renderer”** no mesmo objeto criado anteriormente, conforme mostra a Figura 13.
 
 
 <p align="center">
 <img src="img/adicionando_componente_meshrenderer.png"width="500">
  <br>
- Figura 17.
+ Figura 13.
 </p>
  
 
-Após adicionar o Mesh Renderer, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”** como está apresentado nas seguintes, de acordo com as figuras de 18 a 20.
+Após adicionar o Mesh Renderer, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”** como está apresentado nas seguintes, de acordo com as figuras de 14 a 16.
 
 
 <p align="center">
 <img src="img/configurando_meshrenderer1.png"width="500">
  <br>
- Figura 18.
+ Figura 14.
 </p>
  
 
@@ -214,7 +175,7 @@ Após adicionar o Mesh Renderer, na aba **“Cast Shadows”** coloque em **“O
 <p align="center">
 <img src="img/configurando_meshrenderer2.png"width="500">
  <br>
- Figura 19.
+ Figura 15.
 </p>
                                                                                                                          
 
@@ -222,19 +183,60 @@ Após adicionar o Mesh Renderer, na aba **“Cast Shadows”** coloque em **“O
 <p align="center">
 <img src="img/configurando_meshrenderer3.png"width="500">
  <br>
- Figura 20.
+ Figura 16.
 </p>
  
 
 
-Selecione a pasta scripts dentro do pacote de assets que foi adicionado no início do tutorial e escolha o script **“Color Texture Renderer”**, em conformidade com a figura 21.
+Selecione a pasta scripts dentro do pacote de assets que foi adicionado no início do tutorial e escolha o script **“Color Texture Renderer”**, em conformidade com a figura 17.
 
 
 <p align="center">
 <img src="img/adicionando_script_colortexturerenderer.png"width="500">
  <br>
+ Figura 17.
+</p>
+
+
+Após esse processo, selecione o objeto de controle da câmera, criado no inicio do tutorial, selecione a opção **“New Color Frame Event”** e clique no **“+”**. Em seguida, escolha o objeto criado anteriormente na aba **“Main Camera”**, tal qual as figuras 18 e 19.
+
+
+<p align="center">
+<img src="img/configurando_newcolorframe1.png"width="500">
+ <br>
+ Figura 18.
+</p>
+ 
+
+
+<p align="center">
+<img src="img/configurando_newcolorframe2.png"width="500">
+ <br>
+ Figura 19.
+</p>
+ 
+
+
+Clique na aba **“No function”**, selecione a opção **“Color texture renderer”** e em seguida a opção **“On new frame”**, segundo a figura 20.
+
+
+<p align="center">
+<img src="img/configurando_newcolorframe3.png"width="500">
+ <br>
+ Figura 20.
+</p>
+ 
+
+
+Após, selecione a aba **“Runtime Only”** e marque a opção **“Editor and Runtime”**, como apresenta a figura 21.
+
+
+<p align="center">
+<img src="img/configurando_newcolorframe4.png"width="500">
+ <br>
  Figura 21.
 </p>
+
 
 
 
