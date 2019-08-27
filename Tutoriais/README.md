@@ -161,7 +161,7 @@ Para acrescentar textura no objeto que irá transmitir a imagem da câmera adici
 </p>
  
 
-Após adicionar o Mesh Renderer, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”** como está apresentado nas seguintes, de acordo com as figuras de 14 a 16.
+Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, de acordo com as figuras de 14 a 16.
 
 
 <p align="center">
@@ -188,7 +188,7 @@ Após adicionar o Mesh Renderer, na aba **“Cast Shadows”** coloque em **“O
  
 
 
-Selecione a pasta scripts dentro do pacote de assets que foi adicionado no início do tutorial e escolha o script **“Color Texture Renderer”**, em conformidade com a figura 17.
+Selecione a pasta **scripts** dentro do pacote de **assets** que foi adicionado no início do tutorial e escolha o script **“Color Texture Renderer”** e o adicione no objeto que fornece a imagem da câmera, em conformidade com a figura 17.
 
 
 <p align="center">
@@ -217,7 +217,7 @@ Após esse processo, selecione o objeto de controle da câmera, criado no inicio
  
 
 
-Clique na aba **“No function”**, selecione a opção **“Color texture renderer”** e em seguida a opção **“On new frame”**, segundo a figura 20.
+Escolha a aba **“No function”**, selecione a opção **“Color texture renderer”** e em seguida a opção **“On new frame”**, segundo a figura 20.
 
 
 <p align="center">
