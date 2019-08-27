@@ -151,7 +151,7 @@ Selecione o componente **“Mesh Filter”**, em seguida clique no círculo que 
  
 
 
-Para acrescentar textura no objeto que irá transmitir a imagem da câmera adicione outro componente chamado **“Mesh Renderer”** no mesmo objeto criado anteriormente, conforme mostra a Figura 13.
+Para acrescentar textura no objeto que irá transmitir a imagem da câmera adicione outro componente chamado **“Mesh Renderer”** no mesmo objeto, conforme mostra a Figura 13.
 
 
 <p align="center">
