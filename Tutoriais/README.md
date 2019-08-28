@@ -1,21 +1,21 @@
-# Tutorial para utilizar a camera ORBBEC no unity
+# Tutorial para utilizar a câmera ORBBEC no unity
 
-[Instalando o driver da camera](#instalando-o-driver-da-camera-no-computador)
+[Instalando o driver da câmera](#instalando-o-driver-da-camera-no-computador)
 
 [Fazendo download do pacote de assets](#fazendo-download-do-pacote-de-assets)
 
 [Importando o pacote de assets](#importando-o-pacote-de-assets-para-unity)
 
-[Adicionando o Controlador da Câmera](#adicionando-o-controlador-da-câmera)
+[Adicionando o Controlador da câmera](#adicionando-o-controlador-da-câmera)
 
-[Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera)
+[Como obter a imagem RAW da câmera](#como-obter-a-imagem-raw-da-câmera)
 
 [Como obter a imagem de profundidade da Câmera](#como-obter-a-imagem-de-profundidade-da-câmera)
 
 
 
 
-## Instalando o driver da camera no computador
+## Instalando o driver da câmera no computador
 
 Para o reconhecimento e funcionamento da Câmera ORBBEC ASTRA no computador, é necessário instalar drives da câmera. Para isso, deve-se acessar o site dos [desenvolvedores da ORBBEC](https://orbbec3d.com/develop/) e realizar o download dos drives compatíveis com a câmera e o sistema operacional do computador, conforme mostrado na Figura 1.
 
@@ -161,7 +161,7 @@ Para acrescentar textura no objeto que irá transmitir a imagem da câmera adici
 </p>
  
 
-Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, de acordo com as figuras de 14 a 16. \*Depois de criar e configurar o objeto, é necessário posicioná-lo na frente da **Main Camera**, para que ela possa pegar a imagem a ser transmitida.
+Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, de acordo com as figuras de 14 a 16. \*Depois de criar e configurar o objeto, é necessário reposicioná-lo na frente da **Main Camera**, para que ela possa pegar a imagem a ser transmitida.
 
 
 <p align="center">
@@ -241,18 +241,69 @@ Após, selecione a aba **“Runtime Only”** e marque a opção **“Editor and
 
 ## Como obter a imagem de profundidade da Câmera
 
-Para obter a imagem de profundidade da câmera, primeiramente é necessário criar um novo objeto vazio dentro da aba **"Main Camera"** na **Janela de hierarquia**, como mostra a figura 22.
+Para obter a imagem de profundidade da câmera, primeiramente é necessário criar um novo objeto vazio dentro da aba **"Main Camera"** na **Janela de hierarquia**, como mostra a figura 22. \*O objeto criado também deverá ser reposicionado na frente da "Main Camera" como foi realizado na obtenção da imagem da câmera.
 
 
 <p align="center">
-<img src="img/adicionando_objeto_de_profundidade.png.png"width="500">
+<img src="img/adicionando_objeto_de_profundidade.png"width="500">
  <br>
  Figura 22.
 </p>
 
 
 
-Em seguida, adicione os componentes **"Mesh Filter e Mesh Renderer"** e os configure como foi ensinado anteriormente no tópico [Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera). 
+Em seguida, adicione os componentes **"Mesh Filter e Mesh Renderer"** e os configure como foi ensinado anteriormente no tópico [Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera).
+
+Depois de concluir os passos acima, adicione o script **"Depth Texture Renderer"** no mesmo objeto criado anteriormente de acordo com a figura 23.
+
+
+<p align="center">
+<img src="img/adicionando_script_depht_texture_renderer.png"width="500">
+ <br>
+ Figura 23.
+</p>
+
+
+Selecione o objeto de **"Controle da Camera"** para configurar o objeto que irá transmitir a imagem com profundidade, em seguida clique no **"+"** logo abaixo da opção **"New Depth Frame Event"** para adicionar o objeto desejado como é observado na figura 24.
+
+
+<p align="center">
+<img src="img/adicionando_componente_camera_de_profundidade_no_controle_da_camera.png"width="500">
+ <br>
+ Figura 24.
+</p>
+
+
+Posteriormente, escolha o objeto que irá transmitir a imagem com profundidade, e o configure do mesmo modo que foi feito nos passos de [Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera) de acordo com a figuras de 25 a 28. 
+
+
+<p align="center">
+<img src="img/configurando_controle_da_camera_para_profundidade.png"width="500">
+ <br>
+ Figura 25.
+</p>
+
+
+<p align="center">
+<img src="img/configurando_controle_da_camera_para_profundidade1.png"width="500">
+ <br>
+ Figura 26.
+</p>
+
+
+<p align="center">
+<img src="img/configurando_controle_da_camera_para_profundidade2.png"width="500">
+ <br>
+ Figura 27.
+</p>
+
+
+<p align="center">
+<img src="img/configurando_controle_da_camera_para_profundidade3.png"width="500">
+ <br>
+ Figura 28.
+</p>
+
 
 
 
