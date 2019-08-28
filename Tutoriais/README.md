@@ -161,7 +161,8 @@ Para acrescentar textura no objeto que irá transmitir a imagem da câmera adici
 </p>
  
 
-Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, de acordo com as figuras de 14 a 16. \*Depois de criar e configurar o objeto, é necessário reposicioná-lo na frente da **Main Camera**, para que ela possa pegar a imagem a ser transmitida.
+Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, de acordo com as figuras de 14 a 16.
+\*Depois de criar e configurar o objeto, é necessário reposicioná-lo na frente da **Main Camera**, para que ela possa pegar a imagem a ser transmitida.
 
 
 <p align="center">
@@ -241,7 +242,8 @@ Após, selecione a aba **“Runtime Only”** e marque a opção **“Editor and
 
 ## Como obter a imagem de profundidade da Câmera
 
-Para obter a imagem de profundidade da câmera, primeiramente é necessário criar um novo objeto vazio dentro da aba **"Main Camera"** na **Janela de hierarquia**, como mostra a figura 22. \*O objeto criado também deverá ser reposicionado na frente da "Main Camera" como foi realizado na obtenção da imagem da câmera.
+Para obter a imagem de profundidade da câmera, primeiramente é necessário criar um novo objeto vazio dentro da aba **"Main Camera"** na **Janela de hierarquia**, como mostra a figura 22. 
+\*O objeto criado também deverá ser reposicionado na frente da "Main Camera" como foi realizado na obtenção da imagem da câmera.
 
 
 <p align="center">
