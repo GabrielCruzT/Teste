@@ -10,7 +10,7 @@
 
 [Como obter a imagem RAW da câmera](#como-obter-a-imagem-raw-da-câmera)
 
-[Como obter a imagem de profundidade da Câmera](#como-obter-a-imagem-de-profundidade-da-câmera)
+[Como obter a visualização do mapa de profundidade da imagem](#como-obter-a-visualização-do-mapa-de-profundidade-da-imagem)
 
 
 
@@ -240,9 +240,9 @@ Após, selecione a aba **“Runtime Only”** e marque a opção **“Editor and
 
 
 
-## Como obter a imagem de profundidade da Câmera
+## Como obter a visualização do mapa de profundidade da imagem
 
-Para obter a imagem de profundidade da câmera, primeiramente é necessário criar um novo objeto vazio dentro da aba **"Main Camera"** na **Janela de hierarquia**, como mostra a figura 22. 
+Para obter o mapa de profundidade da câmera, primeiramente é necessário criar um novo objeto vazio dentro da aba **"Main Camera"** na **Janela de hierarquia**, como mostra a figura 22. 
 \*O objeto criado também deverá ser reposicionado na frente da "Main Camera" como foi realizado na obtenção da imagem da câmera.
 
 
@@ -266,7 +266,7 @@ Depois de concluir os passos acima, adicione o script **"Depth Texture Renderer"
 </p>
 
 
-Selecione o objeto de **"Controle da Camera"** para configurar o objeto que irá transmitir a imagem com profundidade, em seguida clique no **"+"** logo abaixo da opção **"New Depth Frame Event"** para adicionar o objeto desejado como é observado na figura 24.
+Selecione o objeto de **"Controle da Camera"** para configurar o objeto que irá transmitir o mapa de profundidade, em seguida clique no **"+"** logo abaixo da opção **"New Depth Frame Event"** para adicionar o objeto desejado como é observado na figura 24.
 
 
 <p align="center">
@@ -276,7 +276,7 @@ Selecione o objeto de **"Controle da Camera"** para configurar o objeto que irá
 </p>
 
 
-Posteriormente, escolha o objeto que irá transmitir a imagem com profundidade, e o configure do mesmo modo que foi feito nos passos de [Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera) de acordo com a figuras de 25 a 28. 
+Posteriormente, escolha o objeto que irá transmitir o mapa de profundidade, e o configure do mesmo modo que foi feito nos passos de [Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera) de acordo com a figuras de 25 a 28. 
 
 
 <p align="center">
