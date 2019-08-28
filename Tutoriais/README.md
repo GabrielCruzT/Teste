@@ -1,6 +1,6 @@
 # Tutorial para utilizar a câmera ORBBEC no unity
 
-[Instalando o driver da câmera](#instalando-o-driver-da-camera-no-computador)
+[Instalando o driver da câmera](#instalando-o-driver-da-câmera-no-computador)
 
 [Fazendo download do pacote de assets](#fazendo-download-do-pacote-de-assets)
 
@@ -74,7 +74,7 @@ Depois de baixado e instalado o driver da câmera, importe do pacote de assets p
 
 ## Adicionando o Controlador da Câmera
 
-O primeiro passo é adicionar o Controlador da Câmera. Isso é feito adicionando o script **"Astra Controller"** à um novo objeto. Para isso, crie um novo objeto clicando com o botão direito do mouse na **Janela de Hierarquia** e escolhendo a opção *"Create Empty"*. Uma vez criado o objeto, selecione o script, na pasta de scripts do pacote de assets, chamado **“Astra Controller”** e arraste para o objeto criado, consoante com as Figuras 6 e 7. O script também pode ser adicionado por meio do botão *"Add Component"* do objeto recém criado.
+O primeiro passo é adicionar o Controlador da Câmera. Isso é feito adicionando o script **"Astra Controller"** à um novo objeto. Para isso, crie um novo objeto clicando com o botão direito do mouse na **Janela de Hierarquia** e escolhendo a opção *"Create Empty"*. Uma vez criado o objeto, selecione o script, na pasta de scripts do pacote de assets, chamado **“Astra Controller”** e arraste para o objeto criado, consoante com as Figuras 6 e 7. \*O script também pode ser adicionado por meio do botão *"Add Component"* do objeto recém criado.
  
 
 <p align="center">
