@@ -74,7 +74,7 @@ Depois de baixado e instalado o driver da câmera, importe do pacote de assets p
 
 ## Adicionando o Controlador da Câmera
 
-O primeiro passo é adicionar o Controlador da Câmera. Isso é feito adicionando o script **"Astra Controller"** à um novo objeto. Para isso, crie um novo objeto clicando com o botão direito do mouse na **Janela de Hierarquia** e escolhendo a opção *"Create Empty"*. Uma vez criado o objeto, selecione o script, na pasta de scripts do pacote de assets, chamado **“Astra Controller”** e arraste para o objeto criado, consoante com as Figuras 6 e 7. \*O script também pode ser adicionado por meio do botão *"Add Component"* do objeto recém criado.
+O primeiro passo é adicionar o Controlador da Câmera. Isso é feito adicionando o script **"Astra Controller"** à um novo objeto. Para isso, crie um novo objeto clicando com o botão direito do mouse na **Janela de Hierarquia** e escolhendo a opção *"Create Empty"*. Uma vez criado o objeto, renomeie o objeto para o nome desejado e selecione o script, na pasta de scripts do pacote de assets, chamado **“Astra Controller”** e arraste para o objeto criado, consoante com as Figuras 6 e 7. \*O script também pode ser adicionado por meio do botão *"Add Component"* do objeto recém criado.
  
 
 <p align="center">
@@ -88,23 +88,28 @@ O primeiro passo é adicionar o Controlador da Câmera. Isso é feito adicionand
 <p align="center">
 <img src="img/adicionando_script_astracontroler.png"width="500">
  <br>
- Figura 7. Selecionando o script <b>"Astra Controller"</b> para ser arrastado ao novo objeto recém criado.
+ Figura 7. Selecionando o script <b>"Astra Controller"</b> para ser arrastado ao novo objeto recém criado chamado tal...
 </p>
+
+Falta a imagem dos 7 modos que tem ai embaixo.
                                                                                                                          
-- Após adicionar o *script* **"Astra Controller"**, é apresentado 7 opções de controles distintos:
-- DepthMap Viewer: É utilizado para visualização do mapa de profundidade da imagem;
-- New Color Frame Event: É utilizado para a visualização da imagem colorida da câmera;
-- New NV21 Color Frame event: É utilizado para a visualização da imagem colorida da câmera, no formato NV21 (Só pode ser usado quando se utilza a câmera na plataforma Android);
-- New Body Frame event **\***: É utilizado para visualizar o esqueleto criado a partir da imagem da câmera;
-- New Masked Color Frame event **\***: É utilizado para visualizar a máscara do objeto;
-- New Colorized Body Frame event **\***: É utilizado para visualizar a máscara colorida do objeto ;
-- New Body Mask event **\***: É utilizado para visualizar o teste de colisão do personagem;
+- Após adicionar o *script* **"Astra Controller"**, são apresentadas 7 opções de controles distintos:
+- Depth Frame: É utilizado para visualização do mapa de profundidade da imagem;
+- Color Frame: É utilizado para a visualização da imagem colorida (Raw) da câmera;
+- NV21 Color Frame: É utilizado para a visualização da imagem colorida da câmera, no formato NV21 (Só pode ser usado quando se utilza a câmera na plataforma Android);
+- Body Frame **\***: É utilizado para visualizar o esqueleto criado a partir da imagem da câmera;
+- Masked Color Frame **\***: É utilizado para visualizar a máscara do objeto;
+- Colorized Body Frame **\***: É utilizado para visualizar a máscara colorida do objeto ;
+- Body Mask **\***: É utilizado para visualizar o teste de colisão do personagem;
 
 **\*** *Estes modos de visualização só funcionam a partir do momento que a câmera detecta um corpo na imagem.*
 
 ## Como obter a imagem RAW da Câmera
 
-Crie um novo objeto na aba **“Main Camera”** da Janela de Hierarquia, conforme a figura 8.
+A imagem raw eh obtida configurando o color frame do controlador, e colocando um objeto que será a imagem da camera na tela.
+
+
+Crie um novo objeto na aba **“Main Camera”** da Janela de Hierarquia e renomeie ... que será a imagem da tela..., conforme a Figura 8.
 
 
 <p align="center">
@@ -113,10 +118,11 @@ Crie um novo objeto na aba **“Main Camera”** da Janela de Hierarquia, confor
  Figura 8.
 </p>
  
+Redimensiona e posiciona esse objeto (falta essa parte)
 
+Selecione o objeto criado, clique na opção **“Add Component”** e logo após na opção **“Mesh ... Mesh Filter”**,segundo a Figura 9.
 
-Selecione o objeto criado, clique na opção **“Add Component”** e logo após na opção **“Mesh”**,segundo a figura 9.
-
+Descobrir na net pra que serve esse mesh no caso o mesh filter para falar pq vc ta fazendo isso?
 
 <p align="center">
 <img src="img/adicionando_componente_meshfilter1.png"width="500">
@@ -153,6 +159,7 @@ Selecione o componente **“Mesh Filter”**, em seguida clique no círculo que 
 
 Para acrescentar textura no objeto que irá transmitir a imagem da câmera adicione outro componente chamado **“Mesh Renderer”** no mesmo objeto, conforme mostra a Figura 13.
 
+Explicar pq vc ta escolhendo essa textura? 
 
 <p align="center">
 <img src="img/adicionando_componente_meshrenderer.png"width="500">
@@ -160,6 +167,7 @@ Para acrescentar textura no objeto que irá transmitir a imagem da câmera adici
  Figura 13.
 </p>
  
+E porque dessas configurações abaixo aí
 
 Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, de acordo com as figuras de 14 a 16.
 \*Depois de criar e configurar o objeto, é necessário reposicioná-lo na frente da **Main Camera**, para que ela possa pegar a imagem a ser transmitida.
@@ -199,7 +207,7 @@ Selecione a pasta **scripts** dentro do pacote de **assets** que foi adicionado 
 </p>
 
 
-Após esse processo, selecione o objeto de controle da câmera, criado no inicio do tutorial, selecione a opção **“New Color Frame Event”** e clique no **“+”**. Em seguida, escolha o objeto criado anteriormente na aba **“Main Camera”**, tal qual as figuras 18 e 19.
+Após esse processo, selecione o objeto de controle da câmera, criado no inicio do tutorial com o nome de tal, selecione a opção **“New Color Frame Event”** e clique no **“+”**. Em seguida, escolha o objeto criado anteriormente na aba **“Main Camera”**, tal qual as figuras 18 e 19.
 
 
 <p align="center">
@@ -220,6 +228,7 @@ Após esse processo, selecione o objeto de controle da câmera, criado no inicio
 
 Escolha a aba **“No function”**, selecione a opção **“Color texture renderer”** e em seguida a opção **“On new frame”**, segundo a figura 20.
 
+Porque???
 
 <p align="center">
 <img src="img/configurando_newcolorframe3.png"width="500">
@@ -229,7 +238,7 @@ Escolha a aba **“No function”**, selecione a opção **“Color texture rend
  
 
 
-Após, selecione a aba **“Runtime Only”** e marque a opção **“Editor and Runtime”**, como apresenta a figura 21.
+Após, selecione a aba **“Runtime Only”** e marque a opção **“Editor and Runtime”**, como apresenta a Figura 21.
 
 
 <p align="center">
@@ -237,6 +246,10 @@ Após, selecione a aba **“Runtime Only”** e marque a opção **“Editor and
  <br>
  Figura 21.
 </p>
+
+Feito isso está configurada a imagem raw da camera... e uma vez que de o play no prog... funciona:
+
+Foto do funcionamento aqui.
 
 
 
