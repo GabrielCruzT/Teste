@@ -203,7 +203,7 @@ Depois de criar e configurar o objeto, é necessário reposicioná-lo na frente 
 
 
 <p align="center">
-<img src="img/imagem_do_script_de_controle_da_camera.png"width="500">
+<img src="img/redimensionando_objeto.png"width="500">
  <br>
  Figura 18.
 </p>
