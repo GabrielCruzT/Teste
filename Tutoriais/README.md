@@ -125,6 +125,7 @@ Crie um novo objeto na aba **“Main Camera”** da Janela de Hierarquia e o ren
 
 
 Selecione o objeto criado, clique na opção **“Add Component”** e logo após na opção **“Mesh ... Mesh Filter”**,segundo a Figura 10.
+**\*** O 
 
 Descobrir na net pra que serve esse mesh no caso o mesh filter para falar pq vc ta fazendo isso?
 
@@ -136,6 +137,7 @@ Descobrir na net pra que serve esse mesh no caso o mesh filter para falar pq vc 
  
 
 Selecione o componente **“Mesh Filter”**, em seguida clique no círculo que irá aparecer do lado direito da tela e depois selecione a opção **“Quad”** para que se crie a caixa onde aparecerá a imagem da câmera como mostram as seguintes, como apresentado nas figuras de 11 a 13.
+**\*** O "Mesh Filter" recebe uma uma malha de polígonos dos seus assets, e passa essa malha ao mesh renderer para ele renderizar na tela.
 
 
 <p align="center">
@@ -161,9 +163,8 @@ Selecione o componente **“Mesh Filter”**, em seguida clique no círculo que 
  
 
 
-Para acrescentar textura no objeto que irá transmitir a imagem da câmera adicione outro componente chamado **“Mesh Renderer”** no mesmo objeto, conforme mostra a Figura 14.
-
-Explicar pq vc ta escolhendo essa textura? 
+Para acrescentar textura no objeto que irá transmitir a imagem da câmera adicione outro componente chamado **“Mesh Renderer”** no mesmo objeto, conforme mostra a Figura 14. 
+**\*** O "Mesh Renderer" obtém a geometria do mesh filter e renderiza ela em uma possição definida pelo componente **"transform"** do gameobject (aquele que mostra a escala, rotação e posição do objeto).
 
 <p align="center">
 <img src="img/adicionando_componente_meshrenderer.png"width="500">
@@ -171,9 +172,15 @@ Explicar pq vc ta escolhendo essa textura?
  Figura 14.
 </p>
  
-E porque dessas configurações abaixo aí
 
-Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, conforme as figuras de 15 a 17.
+Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”** , desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, conforme as figuras de 15 a 17.
+
+
+- Cast Shadows: Especifica se e como a malha lança sombras se comporta quando uma luz adequada é aplicada sobre ela.
+- Reflection Probes: Especifica como o GameObject é afetado pelas reflexões na cena. Você não pode desativar esta propriedade nos modos de renderização adiada.
+- Receive Shadows: Esta opção **"Habilitada"**, faz com que a Malha exiba sombras projetadas sobre ela. 
+- Use Light Probes: É o modo de interpolação de iluminação baseada em sonda. Ou seja, um Mesh recebe luz do sistema "Light Probe" , dependendo do valor que é definido.
+- Materials: A aba "Materials" no Mesh Renderer, lista todos os materiais que o Mesh Renderer está usando, além de permitir a escolha de novos materiais. As malhas importadas do software de modelagem 3D podem usar vários materiais , e cada sub-malha usa um material da lista. (No caso apresentado na Figura 17, o material usado (Unlit Texture) "preenche" o "Mesh" criado anteriormente.
 
 
 <p align="center">
