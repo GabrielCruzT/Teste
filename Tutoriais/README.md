@@ -125,9 +125,9 @@ Crie um novo objeto na aba **“Main Camera”** da Janela de Hierarquia e o ren
 
 
 Selecione o objeto criado, clique na opção **“Add Component”** e logo após na opção **“Mesh ... Mesh Filter”**,segundo a Figura 10.
-**\*** O 
 
-Descobrir na net pra que serve esse mesh no caso o mesh filter para falar pq vc ta fazendo isso?
+
+
 
 <p align="center">
 <img src="img/adicionando_componente_meshfilter1.png"width="500">
