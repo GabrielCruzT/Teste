@@ -74,7 +74,7 @@ Depois de baixado e instalado o driver da câmera, importe do pacote de assets p
 
 ## Adicionando o Controlador da Câmera
 
-O primeiro passo é adicionar o Controlador da Câmera. Isso é feito adicionando o script **"Astra Controller"** à um novo objeto. Para isso, crie um novo objeto clicando com o botão direito do mouse na **Janela de Hierarquia** e escolhendo a opção *"Create Empty"*. Uma vez criado o objeto, renomeie o objeto para o nome desejado e selecione o script, na pasta de scripts do pacote de assets, chamado **“Astra Controller”** e arraste para o objeto criado, consoante com as Figuras 6 a 8. \*O script também pode ser adicionado por meio do botão *"Add Component"* do objeto recém criado.
+O primeiro passo é adicionar o Controlador da Câmera. Isso é feito adicionando o script **"Astra Controller"** em um novo objeto. Para isso, crie um objeto vazio clicando com o botão direito do mouse na **Janela de Hierarquia** e escolhendo a opção *"Create Empty"*. Uma vez criado, renomeie o objeto para o nome desejado e selecione o script **“Astra Controller”**, na pasta de scripts do pacote de assets,  e o adicione no objeto criado, consoante com as Figuras 6 a 8. \*O script também pode ser adicionado por meio do botão *"Add Component"* do objeto recém criado.
  
 
 <p align="center">
@@ -124,9 +124,11 @@ Crie um novo objeto na aba **“Main Camera”** da Janela de Hierarquia e o ren
  
 
 
-Selecione o objeto criado, clique na opção **“Add Component”** e logo após na opção **“Mesh ... Mesh Filter”**,segundo a Figura 10.
+Selecione o objeto criado, clique na opção **“Add Component”** e logo após na opção **“Mesh ... Mesh Filter”**, em seguida clique no círculo que irá aparecer do lado direito da tela e depois selecione a opção **“Quad”** para que se crie a caixa onde aparecerá a imagem da câmera como mostram as Figuras de 10 a 13.
 
-Descobrir na net pra que serve esse mesh no caso o mesh filter para falar pq vc ta fazendo isso?
+**\*** O "Mesh Filter" recebe uma uma malha de polígonos dos seus assets, e passa essa malha ao mesh renderer para ele renderizar na tela.
+
+
 
 <p align="center">
 <img src="img/adicionando_componente_meshfilter1.png"width="500">
@@ -134,8 +136,6 @@ Descobrir na net pra que serve esse mesh no caso o mesh filter para falar pq vc 
  Figura 10.
 </p>
  
-
-Selecione o componente **“Mesh Filter”**, em seguida clique no círculo que irá aparecer do lado direito da tela e depois selecione a opção **“Quad”** para que se crie a caixa onde aparecerá a imagem da câmera como mostram as seguintes, como apresentado nas figuras de 11 a 13.
 
 
 <p align="center">
@@ -161,9 +161,8 @@ Selecione o componente **“Mesh Filter”**, em seguida clique no círculo que 
  
 
 
-Para acrescentar textura no objeto que irá transmitir a imagem da câmera adicione outro componente chamado **“Mesh Renderer”** no mesmo objeto, conforme mostra a Figura 14.
-
-Explicar pq vc ta escolhendo essa textura? 
+Para acrescentar textura no objeto que irá transmitir a imagem da câmera adicione outro componente chamado **“Mesh Renderer”** no mesmo objeto, conforme mostra a Figura 14. 
+**\*** O "Mesh Renderer" obtém a geometria do mesh filter e renderiza ela em uma possição definida pelo componente **"transform"** do gameobject (aquele que mostra a escala, rotação e posição do objeto).
 
 <p align="center">
 <img src="img/adicionando_componente_meshrenderer.png"width="500">
@@ -171,9 +170,15 @@ Explicar pq vc ta escolhendo essa textura?
  Figura 14.
 </p>
  
-E porque dessas configurações abaixo aí
 
-Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”**, desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, conforme as figuras de 15 a 17.
+Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **“Off”** juntamente com a aba **“Reflection Probes”** , desmarque as caixas **“Receive Shadows”** e **“Use Light Probes”**, clique na opção **“Materials”** para escolher o tipo de textura a ser usada e depois no círculo na parte direita da tela e selecione a **“Unlit Texture”**, conforme as figuras de 15 a 17.
+
+
+- Cast Shadows: Especifica se e como a malha lança sombras se comporta quando uma luz adequada é aplicada sobre ela.
+- Reflection Probes: Especifica como o GameObject é afetado pelas reflexões na cena. Você não pode desativar esta propriedade nos modos de renderização adiada.
+- Receive Shadows: Esta opção **"Habilitada"**, faz com que a Malha exiba sombras projetadas sobre ela. 
+- Use Light Probes: É o modo de interpolação de iluminação baseada em sonda. Ou seja, um Mesh recebe luz do sistema "Light Probe" , dependendo do valor que é definido.
+- Materials: A aba "Materials" no Mesh Renderer, lista todos os materiais que o Mesh Renderer está usando, além de permitir a escolha de novos materiais. As malhas importadas do software de modelagem 3D podem usar vários materiais , e cada sub-malha usa um material da lista. (No caso apresentado na Figura 17, o material usado (Unlit Texture) "preenche" o "Mesh" criado anteriormente.
 
 
 <p align="center">
@@ -199,7 +204,7 @@ Após adicionar o **Mesh Renderer**, na aba **“Cast Shadows”** coloque em **
 </p>
 
 
-Depois de criar e configurar o objeto, é necessário reposicioná-lo na frente da **Main Camera**, para que ela possa "pegar" a imagem a ser transmitida. Para isso selecione a opção **"Scene"**(Seta preta) para no modo de configuração da cena, logo após selecione a opção de reposicionamento (Seta Azul) e escolha o lugar desejdo para mostrar a imagem da camera utilizando os vetores (Seta Amarela), de acordo com a Figura 18.
+Depois de criar e configurar o objeto, é necessário reposicioná-lo na frente da **Main Camera**, para que ela possa obter a imagem a ser transmitida. Para isso, selecione a opção **"Scene"**(Seta preta) para entrar no modo de configuração da cena, logo após selecione a opção de reposicionamento (Seta Azul) e escolha o lugar desejdo para mostrar a imagem da camera utilizando os vetores (Seta Amarela), de acordo com a Figura 18.
 
 
 <p align="center">
@@ -241,7 +246,7 @@ Após esse processo, selecione o objeto de controle da câmera, criado no [iníc
 
 Escolha a aba **“No function”**, selecione a opção **“Color texture renderer”** e em seguida a opção **“On new frame”**, segundo a Figura 22.
 
-Porque???
+por que??
 
 <p align="center">
 <img src="img/configurando_newcolorframe3.png"width="500">
