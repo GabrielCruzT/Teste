@@ -311,28 +311,28 @@ Em seguida, adicione os componentes **"Mesh Filter e Mesh Renderer"** ao objeto 
 
 
 <p align="center">
-<img src="adicionando_meshrenderer_ao_dephmapviewer.png"width="500">
+<img src="novas_imagens/adicionando_meshrenderer_ao_dephmapviewer.png"width="500">
  <br>
  Figura 28. 
 </p>
 
 
 <p align="center">
-<img src="adicionando_meshrenderer_ao_dephmapviewer1.png"width="500">
+<img src="novas_imagens/adicionando_meshrenderer_ao_dephmapviewer1.png"width="500">
  <br>
  Figura 29. 
 </p>
 
 
 <p align="center">
-<img src="adicionando_meshrenderer_ao_dephmapviewer2.png"width="500">
+<img src="novas_imagens/adicionando_meshrenderer_ao_dephmapviewer2.png"width="500">
  <br>
  Figura 30. 
 </p>
 
 
 <p align="center">
-<img src="adicionando_meshrenderer_ao_dephmapviewer3.png"width="500">
+<img src="novas_imagens/adicionando_meshrenderer_ao_dephmapviewer3.png"width="500">
  <br>
  Figura 31. 
 </p>
