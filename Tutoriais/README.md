@@ -284,7 +284,7 @@ Para obter o mapa de profundidade da câmera(Depth Map Viewer), primeiramente é
 
 
 
-Em seguida, adicione os componentes **"Mesh Filter e Mesh Renderer"** ao objeto de mapa de profundidade para que se possa transmitir a imagem do objeto criado, e os configure como foi ensinado anteriormente no tópico [Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera), de acordo com as Figuras de 25 a 27. O novo objeto também deverá ser reposicionado na frente da **Main Camera** como foi realizado na obtenção da imagem RAW da câmera.
+Em seguida, adicione os componentes **"Mesh Filter e Mesh Renderer"** ao objeto de mapa de profundidade para que se possa transmitir a imagem, e os configure como foi ensinado anteriormente no tópico [Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera), de acordo com as Figuras de 25 a 31. O novo objeto também deverá ser reposicionado no campo de visão da **Main Camera** como foi realizado na obtenção da imagem RAW da câmera.
 
 
 
@@ -337,39 +337,47 @@ Em seguida, adicione os componentes **"Mesh Filter e Mesh Renderer"** ao objeto 
  Figura 31. Selecionando o material que será utilizado para transmitir a imagem do objeto (Depth Map Viewer).
 </p>
 
-Em seguida, é fundamental que se adicione o script **"Depth Texture Renderer"** no objeto "Depth Map Viewer" criado anteriormente de acordo com a Figura 25.
+Em seguida, é fundamental que se adicione o script **"Depth Texture Renderer"** no objeto "Depth Map Viewer" criado anteriormente de acordo com a Figura 32.
 
-Selecione o objeto de **"Controle da Camera"** para configurar o objeto que irá transmitir o mapa de profundidade, em seguida clique no **"+"** logo abaixo da opção **"New Depth Frame Event"** para adicionar o objeto desejado como é observado na Figura 26.
+
+<p align="center">
+<img src="novas_imagens/adicionando_scriptr_ao_dephmapviewer.png"width="500">
+ <br>
+ Figura 32. Adicionando script "Depth Texture Renderer" ao objeto "Depth Map viewer".
+</p>
+
+
+Selecione o objeto de **"Controle da Camera"** para configurar o objeto que irá transmitir o mapa de profundidade, em seguida clique no **"+"** logo abaixo da opção **"New Depth Frame Event"** para adicionar o objeto desejado como é observado na Figura 33.
 
 
 <p align="center">
 <img src="novas_imagens/configurando_controle_da_camera_para_depthmapviewer.png"width="500">
  <br>
- Figura 32. Adicionando o objeto "Depth Map viewer" ao controle da câmera.
+ Figura 33. Adicionando o objeto "Depth Map viewer" ao controle da câmera.
 </p>
 
 
-Posteriormente, escolha o objeto que irá transmitir o mapa de profundidade, e o configure do mesmo modo que foi feito nos passos de [Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera) de acordo com a Figuras de 27 a 30. 
+Posteriormente, escolha o objeto que irá transmitir o mapa de profundidade, e o configure do mesmo modo que foi feito nos passos de [Como obter a imagem RAW da Câmera](#como-obter-a-imagem-raw-da-câmera) de acordo com a Figuras de 34 a 36. 
 
 
 <p align="center">
 <img src="novas_imagens/configurando_controle_da_camera_para_depthmapviewer1.png"width="500">
  <br>
- Figura 33. Selecionando o objeto "Depth Map viewer" na hierarquia de objetos criados.
+ Figura 34. Selecionando o objeto "Depth Map viewer" na hierarquia de objetos criados.
 </p>
 
 
 <p align="center">
 <img src="novas_imagens/configurando_controle_da_camera_para_depthmapviewer2.png"width="500">
  <br>
- Figura 34. Configurando função do objeto ao transmitir a imagem (Selecionando opção trasmissão de imagem dinâmico).
+ Figura 35. Configurando função do objeto ao transmitir a imagem (Selecionando opção trasmissão de imagem dinâmico).
 </p>
 
 
 <p align="center">
 <img src="novas_imagens/configurando_controle_da_camera_para_depthmapviewer3.png"width="500">
  <br>
- Figura 35.
+ Figura 36.
 </p>
 
 Feito isso está configurada o mapa de profundidade da camera. Uma vez que dê o play na cena, o programa funcionará e mostrará a imagem:
