@@ -380,8 +380,15 @@ Posteriormente, escolha o objeto que irá transmitir o mapa de profundidade, e o
  Figura 36.
 </p>
 
+
 Feito isso está configurada o mapa de profundidade da camera. Uma vez que dê o play na cena, o programa funcionará e mostrará a imagem:
 
+
+<p align="center">
+<img src="novas_imagens/funcionamento_imagem_depthmapviewer.PNG"width="500">
+ <br>
+ Figura 37. Funcionamento da imagem da câmera em conjunto com o mapa de profundidade.
+</p>
 
 
 [Voltar para o inicio](#tutorial-para-utilizar-a-câmera-orbbec-no-unity)
