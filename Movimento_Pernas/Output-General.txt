@@ -1,0 +1,3 @@
+﻿We were unable to automatically populate your Visual Studio Team Services accounts.
+    
+The following error was encountered: VS30063: You are not authorized to access https://app.vssps.visualstudio.com.

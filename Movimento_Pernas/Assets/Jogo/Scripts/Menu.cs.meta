@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: fe6a7a7b015e1ca489ec130b569a797f
+timeCreated: 1578881451
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - nome: {instanceID: 0}
+  - idade: {instanceID: 0}
+  - Points: {instanceID: 0}
+  - Time: {instanceID: 0}
+  - gamemod1: {instanceID: 0}
+  - gamemod2: {instanceID: 0}
+  - boy: {instanceID: 0}
+  - girl: {instanceID: 0}
+  - OnTime: {instanceID: 0}
+  - DelayTime: {instanceID: 0}
+  - On_time: {instanceID: 0}
+  - Delay_time: {instanceID: 0}
+  - SelectUser: {instanceID: 0}
+  - prefab_button: {fileID: 183018, guid: 28239994f9f64b34f956e29369e3241c, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
